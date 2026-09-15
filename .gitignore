@@ -1,0 +1,17 @@
+# Terraform
+**/.terraform/*
+*.tfstate
+*.tfstate.*
+*.tfvars
+!terraform.tfvars.example
+crash.log
+crash.*.log
+
+# Never commit AWS credentials
+.aws/
+*.pem
+
+# Scan output — regenerate it, don't commit it
+scanning/reports/
+
+.DS_Store
