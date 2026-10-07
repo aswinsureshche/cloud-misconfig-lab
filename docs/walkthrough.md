@@ -1,9 +1,7 @@
 # Walkthrough
 
-Step-by-step run order, with a findings template at the bottom for your own
-writeup. The template is intentionally left blank — fill it in with your
-own screenshots and output, not anything pasted from elsewhere, since this
-is the part that's actually yours.
+Step-by-step run order, with a findings template at the bottom for writing
+up the results of a run.
 
 ## 0. Prerequisites
 

@@ -9,6 +9,11 @@ This is infrastructure-as-code, not a fixed environment — the same
 Terraform config can be applied in a **vulnerable** state or a **hardened**
 state by flipping one variable, so the before/after comparison is exact.
 
+> **Status (October 2026):** Infrastructure and tooling are complete. The
+> first full scan → harden → re-scan run is in progress; Prowler/ScoutSuite
+> results, screenshots, and a findings report will be added under `docs/`
+> once it's done.
+
 ## What gets misconfigured, and why these four
 
 | Resource | Misconfiguration | Real-world category |
@@ -116,14 +121,3 @@ not lab-only substitutes — running them against your own deliberately
 misconfigured account and then fixing what they find is functionally the
 same exercise a junior cloud security engineer does in their first month on
 the job.
-
-## What I can't do for you
-
-I built every file in this repo, but I don't have your AWS account or
-credentials, and won't ask for them — actually running `terraform apply`,
-scanning, and tearing down has to happen on your machine, against your
-account. That also means the screenshots, scan output, and findings write-up
-in your final report need to come from a run *you* actually did — see the
-template in [docs/walkthrough.md](docs/walkthrough.md), which is intentionally
-left with blanks for your own results rather than filled in with fabricated
-output.
